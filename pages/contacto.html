@@ -1,0 +1,82 @@
+<!DOCTYPE html>
+<html lang="es">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Sakura Pastelería</title>
+    <script src="https://kit.fontawesome.com/cbbd236219.js" crossorigin="anonymous"></script>
+    <link rel="stylesheet" href="/css/style.css">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link
+        href="https://fonts.googleapis.com/css2?family=Comfortaa:wght@300..700&family=Playpen+Sans:wght@100..800&family=Quicksand:wght@300..700&display=swap"
+        rel="stylesheet">
+    <link rel="shortcut icon" href="/assets/img/sakura.png" type="image/x-icon">
+</head>
+
+<body id="#home">
+    <header class="encabezado">
+        <a href="/index.html">
+            <img class="logo" src="/assets/img/sakura.png" alt="flor de cerezo">
+            <h1 class="titulo">Sakura Pastelería</h1>
+        </a>
+        <nav>
+            <ul class="nav-list">
+                <li><a href="/index.html">HOME</a></li>
+                <li><a href="/index.html#productos">PRODUCTOS</a></li>
+                <li><a href="/index.html#comentarios">COMENTARIOS</a></li>
+                <li><a href="/pages/contacto.html">CONTACTO</a></li>
+            </ul>
+        </nav>
+    </header>
+    <main>
+        <section class="container">
+            <h1>Contactanos</h1>
+            <form action="https://formspree.io/f/mzzbdvyo" method="POST" id="miFormulario">
+                <label>
+                    Nombre:
+                    <input type="text" name="nombre" id="nombre">
+                </label>
+                <h6 class="error d-none" id="errorNombre">⚠️El nombre es obligatorio.</h6>
+                <label>
+                    Correo electrónico:
+                    <input type="email" name="email" id="email">
+                </label>
+                <h6 class="error d-none" id="errorEmail">⚠️Ingrese un email válido.</h6>
+                <label>
+                    Mensaje:
+                    <textarea name="mensaje" rows="4" cols="50" id="mensaje"></textarea>
+                </label>
+                <h6 class="error d-none" id="errorMensaje">⚠️El mensaje debe tener al menos 10 caracteres.</h6>
+                <button type="submit">Enviar</button>
+            </form>
+        </section>
+    </main>
+    <section class="ubicacion">
+        <h1>Ubicación</h1>
+        <iframe id="map"
+            src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d6566.577938559692!2d-58.461394533358096!3d-34.622137158404314!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x95bcca2175e59d6b%3A0xb29a1421ba5e77a!2sLAB%20SUCR%C3%89!5e0!3m2!1ses-419!2sar!4v1730073150327!5m2!1ses-419!2sar"
+            width="600" height="450" style="border:0;" allowfullscreen=""
+            referrerpolicy="no-referrer-when-downgrade"></iframe>
+    </section>
+    <footer class="footer">
+        <nav>
+            <ul>
+                <p>© 2024 Stefania Sanchiz. Todos los derechos reservados.</p>
+            </ul>
+        </nav>
+        <nav>
+            <ul class="rrss">
+                <li><a href=""><i class="fa-brands fa-facebook"></i></a></li>
+                <li><a href=""><i class="fa-brands fa-twitter"></i></a></li>
+                <li><a href=""><i class="fa-brands fa-instagram"></i></a></li>
+            </ul>
+        </nav>
+        <div>
+            <a href="" target="_blank"><i class="fa-brands fa-whatsapp"></i></a>
+        </div>
+    </footer>
+    <script src="../js/validacion.js"></script>
+</body>
+</html>
